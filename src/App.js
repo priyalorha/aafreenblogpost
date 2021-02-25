@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Footer from './screens/Footer'
+import Headers from './screens/Headers'
+import MainBody from './screens/MainBody'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default class App extends Component {
+    render() {
+        return (
 
-export default App;
+            <div className="grid-container">
+            <header>
+               <Headers/>
+            </header>
+            <main>
+               <MainBody/>
+
+            </main>
+
+            <footer><Footer/></footer>
+            
+                
+            
+            </div>
+        )
+    }
+};
