@@ -8,16 +8,14 @@ export default class App extends Component {
         return (
 
             <div className="grid-container">
-            <header>
-               <Headers/>
-            </header>
-            <main>
-               <MainBody/>
-
-            </main>
-
-            <footer><Footer/></footer>
-            
+                <div className="header">
+                <Headers/></div>
+                <div className="main">
+                <MainBody/>
+                </div>
+                <div className="footer">
+                <Footer/>
+                </div>
                 
             
             </div>

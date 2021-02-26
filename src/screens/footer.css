@@ -1,0 +1,25 @@
+.footer-component
+{
+  display: flex;
+  align-items: stretch;
+}
+.aafreen,
+.subscribe,
+.social-container {
+  
+  padding: 25px 50px;
+  border-bottom: 10px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+a.instagram {
+  color: black;
+}
