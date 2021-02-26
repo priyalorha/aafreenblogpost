@@ -2,12 +2,7 @@
 html{
   font-size: 62.5%;
   box-sizing: border-box;
-}
-
-body,
-#root{
-  height: 100vh;
-  margin:0;
+  
 }
 
 .grid-container
@@ -15,8 +10,8 @@ body,
   display: grid;
   height:100%;
   width:100%;
-  grid-template-rows: 25% 60% 15%;
-  
+  background-color: thistle;
+  grid-row: 25% 50% 25%;
   grid-template-areas: "header"
    "main"
     "footer";
@@ -25,16 +20,31 @@ body,
 
 .header{
   grid-area: header;
+  top: 0%;
   
 }
 .main
 {
   grid-area: main;
+  top: 20%;
   
 }
 
 .footer
 {
   grid-area: footer;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+ 
+  display: flex;
+  text-emphasis: bolder;
+  text-decoration: white;
+  background-color: #ff6f61;
   
+}
+
+.footer:hover
+{
+  height: 50%;
 }

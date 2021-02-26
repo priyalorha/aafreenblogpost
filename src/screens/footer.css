@@ -1,6 +1,10 @@
 .footer-component
 {
+  
   display: flex;
+  text-emphasis: bolder;
+  text-decoration: white;
+  background-color: #ff6f61;
   align-items: stretch;
 }
 .aafreen,
@@ -23,3 +27,11 @@ a.social:hover {
 a.instagram {
   color: black;
 }
+
+
+@media (max-width: 600px) {
+  .footer-component {
+    flex-direction: column;
+  }
+};
+
